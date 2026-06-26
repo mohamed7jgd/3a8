@@ -174,3 +174,28 @@ document.getElementById("wheelResult").innerHTML=
 prizes[Math.floor(Math.random()*prizes.length)];
 
 }
+function animateNumber(id,max){
+
+let n=0;
+
+const timer=setInterval(()=>{
+
+n++;
+
+document.getElementById(id).innerHTML=n;
+
+if(n>=max){
+
+clearInterval(timer);
+
+}
+
+},15);
+
+}
+
+animateNumber("membersCount",1543);
+
+animateNumber("medalsCount",286);
+
+animateNumber("platesCount",11111);
