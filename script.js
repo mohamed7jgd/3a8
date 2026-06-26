@@ -143,3 +143,34 @@ document.getElementById("result").innerHTML=
 percent+"%<br><br>"+text;
 
 }
+function spinWheel(){
+
+const prizes=[
+
+"👑 أكبر عاق",
+
+"🏆 وزير التجاهل",
+
+"📵 ملك وضع الصامت",
+
+"☕ عاشق القهوة",
+
+"😂 محترم بالغلط",
+
+"📞 هارب من المكالمات",
+
+"🛌 وزير القيلولة",
+
+"🚗 صاحب اللوحة 11111",
+
+"🥇 وسام اللامبالاة",
+
+"💤 خبير التأجيل"
+
+];
+
+document.getElementById("wheelResult").innerHTML=
+
+prizes[Math.floor(Math.random()*prizes.length)];
+
+}
