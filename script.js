@@ -83,3 +83,22 @@ quotes[Math.floor(Math.random()*quotes.length)];
 
 randomMedal();
 randomQuote();
+function createCard(){
+
+const name=document.getElementById("memberName").value.trim();
+
+if(name==""){
+
+alert("اكتب اسمك الأول 😂");
+
+return;
+
+}
+
+document.getElementById("cardName").innerHTML=
+
+"الاسم : "+name;
+
+document.getElementById("memberCard").style.display="block";
+
+}
