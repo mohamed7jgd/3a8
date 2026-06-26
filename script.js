@@ -102,3 +102,44 @@ document.getElementById("cardName").innerHTML=
 document.getElementById("memberCard").style.display="block";
 
 }
+function calcO2ooq(){
+
+const percent=Math.floor(Math.random()*101);
+
+let text="";
+
+if(percent<20){
+
+text="😇 ملاك... أنت داخل الحزب بالغلط.";
+
+}
+
+else if(percent<40){
+
+text="🙂 لسه محترم.";
+
+}
+
+else if(percent<60){
+
+text="😏 بدأت تتعلم.";
+
+}
+
+else if(percent<80){
+
+text="😂 عضو نشيط بالحزب.";
+
+}
+
+else{
+
+text="👑 أكبر عاق في المنطقة.";
+
+}
+
+document.getElementById("result").innerHTML=
+
+percent+"%<br><br>"+text;
+
+}
