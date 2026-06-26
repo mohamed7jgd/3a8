@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>حزب العقوق</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Tahoma,sans-serif;
+}
+
+body{
+background:#111;
+color:white;
+}
+
+header{
+background:#8B0000;
+padding:30px;
+text-align:center;
+box-shadow:0 0 20px rgba(255,0,0,.3);
+}
+
+header h1{
+font-size:40px;
+}
+
+header p{
+margin-top:10px;
+color:#ddd;
+}
+
+.container{
+width:90%;
+max-width:900px;
+margin:40px auto;
+}
+
+.card{
+background:#1d1d1d;
+padding:25px;
+margin-bottom:25px;
+border-radius:15px;
+border:1px solid #333;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+border-color:#8B0000;
+}
+
+button{
+margin-top:15px;
+padding:12px 25px;
+border:none;
+border-radius:10px;
+background:#8B0000;
+color:white;
+font-size:18px;
+cursor:pointer;
+}
+
+button:hover{
+background:#c00000;
+}
+
+footer{
+text-align:center;
+padding:30px;
+color:#888;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🏛 حزب العقوق</h1>
+
+<p>
+الموقع الرسمي للحزب (لأغراض الفكاهة فقط)
+</p>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>📜 نبذة</h2>
+
+<p>
+
+نحن حزب لا يعد بشيء...
+ولا ينفذ شيئًا...
+ولا يتحمل مسؤولية أي شيء.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🪪 طلب الانضمام</h2>
+
+<p>
+
+اضغط الزر لمعرفة نتيجة طلبك.
+
+</p>
+
+<button onclick="join()">
+
+انضم الآن
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>🏆 رتبتك داخل الحزب</h2>
+
+<button onclick="rank()">
+
+اعرف رتبتك
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>📢 آخر قرار</h2>
+
+<p id="decision">
+
+جارٍ إصدار قرار...
+
+</p>
+
+</div>
+
+</div>
+
+<footer>
+
+© حزب العقوق 2026
+
+</footer>
+
+<script>
+
+function join(){
+
+const msg=[
+
+"تم قبولك كعاق تحت التدريب 😂",
+
+"تم رفض الطلب... واضح إنك محترم.",
+
+"ملفك تحت المراجعة منذ ٢٠١٩.",
+
+"يرجى إحضار شاهدين يشهدان أنك لا ترد بسرعة.",
+
+"تم تحويل طلبك إلى لجنة العقوق العليا."
+
+];
+
+alert(msg[Math.floor(Math.random()*msg.length)]);
+
+}
+
+function rank(){
+
+const ranks=[
+
+"👑 أكبر عاق",
+
+"🥇 العاق الذهبي",
+
+"⭐ عاق ممتاز",
+
+"📄 عاق تحت الاختبار",
+
+"🙂 لسه محترم شوية"
+
+];
+
+alert(ranks[Math.floor(Math.random()*ranks.length)]);
+
+}
+
+const decisions=[
+
+"يُمنع الرد بكلمة حاضر.",
+
+"الرد بعد ساعة حق دستوري.",
+
+"القيلولة أهم من أي مشوار.",
+
+"أي اتصال قبل 12 ظهرًا يعتبر مزعجًا.",
+
+"يجوز تجاهل الرسائل حتى إشعار آخر."
+
+];
+
+document.getElementById("decision").innerHTML=
+
+decisions[Math.floor(Math.random()*decisions.length)];
+
+</script>
+
+</body>
+
+  </html>
