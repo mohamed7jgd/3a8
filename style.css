@@ -280,3 +280,86 @@ color:#ffcc00;
 margin-bottom:10px;
 
 }
+html{
+    scroll-behavior:smooth;
+}
+
+button{
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-3px) scale(1.03);
+}
+
+button:active{
+    transform:scale(.95);
+}
+
+.card{
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.2);
+}
+
+input{
+    outline:none;
+    transition:.3s;
+}
+
+input:focus{
+    border-color:#b30000;
+    box-shadow:0 0 10px rgba(179,0,0,.3);
+}
+
+footer{
+    line-height:1.8;
+}
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav div{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:35px;
+}
+
+.hero p{
+    font-size:17px;
+}
+
+.card{
+    padding:18px;
+}
+
+button{
+    width:100%;
+}
+
+.stats{
+    flex-direction:column;
+    align-items:center;
+}
+
+.stat{
+    width:100%;
+}
+
+.plate-bottom{
+    flex-direction:column;
+    gap:10px;
+}
+
+}
